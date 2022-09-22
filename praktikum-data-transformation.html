@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Transformation</title>
+</head>
+<body>
+    <p id="display"></p>
+
+    <script>
+
+        //mengerti struktur object dan array javascript
+        //tau cara manipulasinya
+        //var lebih mudah di manipulasi
+        //const sekali engga ya engga
+        //let kadang2 mudah dimanipulasi
+
+        cont zaki = {
+            nama: "Zaki",
+            jenis_kelamin: 1,
+            perasaan: [
+                {
+                    label: "cinta",
+                    level: 99,
+                },
+                {
+                    label: "kasamaran",
+                    level: 99,
+                },
+                {
+                    label: "cemburu",
+                    level: 50,
+                },
+            ],
+            umur: 17,
+            permen: ["kiss", "relaxa"],
+            motor: [
+                {
+                    merk: "CRF",
+                    harga: 31000000,
+                    start: function() {
+                        console.log("brapapaappapapa !!!");
+                    },
+                },
+                {
+                    merk: "KTM 500",
+                    harga: 250000000,
+                    start: function() {
+                        console.log("bumbumbumbum !!!");
+                    },
+                },
+
+            ],
+
+        };
+
+        const silmi = {
+            nama: "Silmi",
+            jenis_kelamin: 2,
+            perasaan: [
+            {
+                    label: "cinta",
+                    level: 99,
+                },
+                {
+                    label: "kasamaran",
+                    level: 0,
+                },
+                {
+                    label: "terpaksa",
+                    level: 100,
+                },
+            ],
+            umur: 17,
+            sisa_di_dompet: 1000,
+            hobi: [
+                {
+                    label: "ngoding",
+                    jam_per_hari: 12,
+                },
+                {
+                    label: "makan",
+                    jam_per_hari: 5,
+                },
+
+
+            ],
+
+        };
+
+        const dutaJajanDiKantinKelasWeb = {zaki, silmi};
+
+        console.log(silmi.peerasaan);
+
+        const arrayLevelPerasaanSilmi = silmi.perasaan.map(function(PerasaanSilmi, urutanKe) {
+            return PerasaanSilmi.level
+        })
+
+        console.log(arrayLevelPerasaanSilmi)
+
+        const arrayLabelPerasaanSilmi = silmi.perasaan.map(function(PerasaaanSilmi, urutanKe){
+            retrun perasaanSilmi.label
+        }
+        )
+        //dutaJajanDiKantinKelasWeb[0].nyaut()
+
+
+
+
+
+        alert<("halo");
+    </script>
+</body>
+</html>
